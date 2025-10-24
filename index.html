@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roa Investment Limited - Professional Cleaning Services</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and a custom color palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'roa-blue': '#1D4ED8', // Deep Blue
+                        'roa-green': '#059669', // Emerald Green
+                        'roa-light': '#F3F4F6', // Light Gray background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Custom style for smooth scrolling and clean look -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Name -->
+            <div class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-roa-blue" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M2.94 6.412A2 2 0 014.28 5h11.44a2 2 0 011.34 1.412l1.986 7.472A3 3 0 0115.532 17H4.468a3 3 0 01-2.028-3.116l1.986-7.472zM5 11a1 1 0 100 2h10a1 1 0 100-2H5z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-2xl font-extrabold text-roa-blue tracking-tight">Roa Investment <span class="text-roa-green text-lg font-semibold">Limited</span></span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#services" class="text-gray-600 hover:text-roa-blue transition duration-150">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-roa-blue transition duration-150">About Us</a>
+                <a href="#why-roa" class="text-gray-600 hover:text-roa-blue transition duration-150">Why Roa</a>
+                <a href="#contact" class="text-gray-600 hover:text-roa-blue transition duration-150">Contact</a>
+                <a href="#cta" class="px-4 py-2 bg-roa-green text-white rounded-lg shadow-md hover:bg-green-700 transition duration-150">Get Quote</a>
+            </nav>
+
+            <!-- Mobile Menu Button (Placeholder for functionality if this were multi-file/framework) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-roa-blue focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-roa-light overflow-hidden pt-16 sm:pt-24 lg:pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            
+            <!-- Text Content -->
+            <div class="lg:w-1/2 mb-10 lg:mb-0 text-center lg:text-left">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Sparkling Clean Spaces.
+                    <span class="block text-roa-blue">Invest in Your Comfort.</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
+                    Roa Investment Limited delivers premium, reliable, and professional cleaning services for homes and businesses. We guarantee a spotless finish every time.
+                </p>
+
+                <div class="mt-8 flex justify-center lg:justify-start space-x-4">
+                    <a href="#contact" class="px-8 py-3 bg-roa-green text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-green-700 transform hover:scale-105 transition duration-300" id="cta">
+                        Get a Free Quote Today
+                    </a>
+                    <a href="#services" class="px-8 py-3 bg-white text-roa-blue border-2 border-roa-blue text-lg font-semibold rounded-xl shadow-lg hover:bg-roa-blue hover:text-white transform hover:scale-105 transition duration-300 hidden sm:inline-flex">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image/Visual (Placeholder using SVG for style) -->
+            <div class="lg:w-1/2 flex justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 text-roa-blue/80" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" opacity=".2"/>
+                    <path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zM11 7h2v6h-2V7zm0 8h2v2h-2v-2z" fill="#059669"/>
+                    <path d="M13 10V7h-2v3h2z"/>
+                    <path fill-rule="evenodd" d="M18.9 5.1C18.2 4.4 17.1 4 16 4h-4.3c-.6 0-1.1.3-1.4.8l-1.8 2.4c-.4.5-.4 1.2 0 1.7l1.8 2.4c.3.5.8.8 1.4.8H16c1.1 0 2.2-.4 2.9-1.1L20 8.5V5.1zM16 11H9.7c-.2 0-.3-.1-.4-.2L7.5 8.4c-.1-.1-.1-.3 0-.4L9.7 5.2c.1-.1.2-.2.4-.2H16c.4 0 .7.1 1 .4L18.4 7c.3.3.3.7 0 1L17 9.6c-.3.3-.6.4-1 .4zM8 15v-1.6c0-.4.3-.8.8-.8h7.4c.5 0 .8.4.8.8v1.6c0 .4-.3.8-.8.8H8.8c-.5 0-.8-.4-.8-.8z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-roa-blue mb-4">Our Specialized Cleaning Services</h2>
+            <p class="text-xl text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                We offer a comprehensive suite of services tailored to meet the unique needs of every client.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Service Card 1 -->
+                <div class="bg-roa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-roa-green transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-roa-green mb-3" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Residential Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Regular, deep, and move-in/move-out cleaning for apartments and houses. We treat your home like our own.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-roa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-roa-blue transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-roa-blue mb-3" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 110-6 3 3 0 010 6z" />
+                    </svg>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Commercial Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Professional janitorial services for offices, retail spaces, and common areas. Enhance your business environment.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-roa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-roa-green transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-roa-green mb-3" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M6 6v6a3 3 0 003 3h10a1 1 0 00.8-1.6l-1.5-2.4c-.4-.6-.9-1.1-1.4-1.6L12 6H6z" clip-rule="evenodd" />
+                      <path d="M10.8 4.3a1 1 0 00-1.6-.2l-5 5A1 1 0 004 10h10a1 1 0 00.8-1.6l-2-3.2A1 1 0 0010.8 4.3z" />
+                    </svg>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Post-Construction</h3>
+                    <p class="text-gray-600 text-sm">Thorough removal of dust, debris, and residue after construction or renovation projects. Ready for occupancy.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-roa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-roa-blue transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-roa-blue mb-3" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7z" />
+                      <path fill-rule="evenodd" d="M3 11a1 1 0 100 2h1a1 1 0 100-2H3zm5-3a1 1 0 100 2h1a1 1 0 100-2H8zM7 3a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z" clip-rule="evenodd" />
+                      <path fill-rule="evenodd" d="M12 18a1 1 0 00-1-1H9a1 1 0 00-1 1v1a1 1 0 001 1h2a1 1 0 001-1v-1z" clip-rule="evenodd" />
+                    </svg>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Specialty & Deep Clean</h3>
+                    <p class="text-gray-600 text-sm">Targeted cleaning like carpet steam cleaning, window washing, and high-touch surface sanitization.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Roa (Trust Factors) -->
+    <section id="why-roa" class="py-16 sm:py-24 bg-roa-blue/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-roa-blue mb-4">The Roa Investment Difference</h2>
+            <p class="text-xl text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                We combine experience, professionalism, and commitment to deliver superior service every time.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <!-- Feature 1: Reliability -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-roa-green mx-auto mb-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Guaranteed Reliability</h3>
+                    <p class="text-gray-600">Our team shows up on time, every time, equipped and ready. We stick to the schedule and the plan.</p>
+                </div>
+                
+                <!-- Feature 2: Quality -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-roa-blue mx-auto mb-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Trained Professionals</h3>
+                    <p class="text-gray-600">Every member of our staff is vetted, fully insured, and highly trained in modern cleaning techniques.</p>
+                </div>
+
+                <!-- Feature 3: Customization -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-roa-green mx-auto mb-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.54 7.46a1 1 0 00-1.41-1.41L13 7.59a1 1 0 00-1 0L7.87 5.17a1 1 0 00-1.41 1.41l3.54 3.54a1 1 0 001.41 0l3.54-3.54zM4.46 7.46a1 1 0 00-1.41-1.41l-.54.54a1 1 0 101.41 1.41l.54-.54z" />
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM10 2a8 8 0 100 16 8 8 0 000-16z" clip-rule="evenodd" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Eco-Friendly Options</h3>
+                    <p class="text-gray-600">We prioritize environmentally safe cleaning products upon request, ensuring safety for your family and pets.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Repeated for visibility before footer) -->
+    <section class="py-16 bg-roa-blue" id="contact">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Ready for a Spotless Space?</h2>
+            <p class="text-xl text-roa-light mb-8">
+                Contact us today for a free, no-obligation quote tailored to your specific cleaning requirements.
+            </p>
+            <a href="mailto:info@roainvestment.com" class="px-10 py-4 bg-roa-green text-white text-xl font-bold rounded-xl shadow-2xl hover:bg-green-600 transform hover:scale-105 transition duration-300">
+                Book Your First Cleaning
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+            
+            <!-- Company Info -->
+            <div>
+                <h4 class="text-lg font-bold text-roa-green mb-4">Roa Investment Limited</h4>
+                <p class="text-sm text-gray-400">
+                    Dedicated to providing the highest standards of cleanliness and customer service across the region.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-150">Our Services</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition duration-150">About Us</a></li>
+                    <li><a href="#why-roa" class="text-gray-400 hover:text-white transition duration-150">Why Choose Roa</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-lg font-bold mb-4">Contact Details</h4>
+                <p class="text-sm text-gray-400 mb-2">Email: <a href="mailto:info@roainvestment.com" class="hover:text-roa-green">info@roainvestment.com</a></p>
+                <p class="text-sm text-gray-400 mb-2">Phone: +1 (555) 123-4567</p>
+                <p class="text-sm text-gray-400">Address: 123 Clean Street, City, Country</p>
+            </div>
+
+            <!-- Social Media (Placeholders) -->
+            <div>
+                <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <!-- Facebook Icon -->
+                    <a href="#" class="text-gray-400 hover:text-roa-blue transition duration-150">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.542-1.333h2.458v-4h-3.264c-3.15 0-3.736 1.182-3.736 3.172v2.828z"/></svg>
+                    </a>
+                    <!-- Instagram Icon -->
+                    <a href="#" class="text-gray-400 hover:text-roa-blue transition duration-150">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14.828 6.002c-.75-.756-1.748-1.206-2.828-1.206s-2.078.45-2.828 1.206c-.75.75-.98 1.748-.98 2.828s.23 2.078.98 2.828c.75.75 1.748.98 2.828.98s2.078-.23 2.828-.98c.75-.75 1.206-1.748 1.206-2.828s-.456-2.078-1.206-2.828zm-2.828 7.998c-2.485 0-4.5-2.015-4.5-4.5s2.015-4.5 4.5-4.5 4.5 2.015 4.5 4.5-2.015 4.5-4.5 4.5zm10.5-8.5v12c0 2.76-2.24 5-5 5h-12c-2.76 0-5-2.24-5-5v-12c0-2.76 2.24-5 5-5h12c2.76 0 5 2.24 5 5zm-2 0c0-1.656-1.344-3-3-3h-12c-1.656 0-3 1.344-3 3v12c0 1.656 1.344 3 3 3h12c1.656 0 3-1.344 3-3v-12zm-3.5 1.5c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm text-gray-500 mt-8 border-t border-gray-700 pt-6">
+            &copy; <span id="year"></span> Roa Investment Limited. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for year and smooth scrolling/mobile menu (even though mobile menu is minimal) -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Simple smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Basic Mobile Menu Toggle (Functionality only needed if we expanded the navigation links)
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        // If we had a hidden mobile menu div, we'd toggle it here.
+        mobileMenuButton.addEventListener('click', () => {
+             console.log("Mobile menu button clicked - would show/hide mobile navigation.");
+        });
+    </script>
+</body>
+</html>
